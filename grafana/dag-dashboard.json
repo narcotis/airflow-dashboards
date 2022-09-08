@@ -587,7 +587,7 @@
                     "text": "java_dag",
                     "value": "java_dag"
                 },
-                "datasource": "Prometheus",
+                "datasource": "VictorriaMetrics",
                 "definition": "label_values(dag_id)",
                 "error": null,
                 "hide": 0,
