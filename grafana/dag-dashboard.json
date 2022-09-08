@@ -21,7 +21,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1662631511909,
+  "iteration": 1662631511955,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -465,8 +465,8 @@
       {
         "current": {
           "selected": false,
-          "text": "qnadb_sync",
-          "value": "qnadb_sync"
+          "text": "review_classifier",
+          "value": "review_classifier"
         },
         "datasource": {
           "uid": "VictorriaMetrics"
@@ -494,7 +494,7 @@
     ]
   },
   "time": {
-    "from": "now-7d",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {
