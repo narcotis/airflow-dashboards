@@ -21,7 +21,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1662630662750,
+  "iteration": 1662630662778,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -80,6 +80,10 @@
       "pluginVersion": "8.3.3",
       "targets": [
         {
+          "datasource": {
+            "type": "VictoriaMetrics"
+          },
+          "exemplar": true,
           "expr": "af_agg_scheduler_heartbeat{airflow_id=\"$airflow_id\"}",
           "interval": "",
           "legendFormat": "",
@@ -187,8 +191,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "P4169E866C3094E38"
+            "type": "VictoriaMetrics"
           },
           "expr": "af_agg_dag_processing_total_parse_time{airflow_id=\"$airflow_id\"}",
           "interval": "",
@@ -1330,7 +1333,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": "5s",
+  "refresh": "",
   "schemaVersion": 34,
   "style": "dark",
   "tags": [],
@@ -1343,12 +1346,9 @@
           "value": "airflow"
         },
         "datasource": {
-          "uid": "Prometheus"
+          "uid": "VictoriaMetrics"
         },
         "definition": "label_values(airflow_id)",
-        "error": {
-          "message": "Datasource Prometheus was not found"
-        },
         "hide": 0,
         "includeAll": false,
         "label": "Airflow Instance Id",
